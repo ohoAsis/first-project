@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'index.html')
 
 
-def ask(request):
+def ask_question(request):
     # 获取前端发送的问题
     question = request.GET.get('question', '')
     model = request.GET.get('model', 'ernie-3.5-8k')
